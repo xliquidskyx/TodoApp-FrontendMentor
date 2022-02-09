@@ -1,0 +1,66 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: hsl(236, 33%, 92%);
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    position: relative;
+    text-align: center;
+
+}
+
+.header-container {
+    margin-top: -3vh;
+    margin: 0 auto;
+    position: relative;
+}
+#header-background {
+    background: url("images/bg-desktop-light.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 40vh; 
+}
+
+#title {
+    color: hsl(0, 0%, 98%);
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.5em; 
+    font-weight: 700;
+    letter-spacing: 15px;
+    margin-top: 20vh;
+}
+
+.moon-icon {
+    margin-left: 25vw;
+    height: 30px;
+}
+
+.task-input {
+    background-color: hsl(0, 0%, 98%);
+    border: none;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.125em; 
+    height: 8vh;
+    outline: none;
+    padding: 1.2rem;
+    margin-top: -40vh;
+    width: auto;
+    min-width: 40vw;
+    z-index: 1000;
+}
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
