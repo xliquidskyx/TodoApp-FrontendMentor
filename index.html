@@ -20,21 +20,29 @@
   <main class="main-content">
     <form>
       <input type="text" class="task-input" placeholder="Write down your task">
-      <button class="task-submit" type="submit" hidden></button>
+      <input class="task-submit" type="submit" hidden>
     </form>
     <div class="task-container">
-      <ul class="task-element"></ul>
-    </div>
-  </main>
-
-
-  <!-- Add dynamic number --> items left
+      <ul class="task-element">
+        <div class="todo">
+          <input class="checked" type="checkbox">
+          <li class="todo-item">Jog around the park</li>
+        </div>
+        <div class="todo">
+          <input class="checked" type="checkbox">
+          <li class="todo-item">it's working!!</li>
+        </div>
+      </ul>
+        <!-- Add dynamic number --> items left
 
   All
   Active 
   Completed
 
   Clear Completed
+    </div>
+  </main>
+
 
   Drag and drop to reorder list
 
@@ -42,6 +50,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
     </div>
-    <scrip src="app.js"></scrip>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -62,6 +62,9 @@ html, body {
 .task-container {
     background-color: hsl(0, 0%, 98%);
     border-radius: 10px;
+    -webkit-box-shadow: -4px 14px 38px -10px rgba(200, 200, 200, 1);
+    -moz-box-shadow: -4px 14px 38px -10px rgba(200, 200, 200, 1);
+    box-shadow: -4px 14px 38px -10px rgba(200, 200, 200, 1);
     color: hsl(235, 19%, 35%);
     display: inline-block;
     font-family: 'Josefin Sans', sans-serif;
@@ -70,7 +73,36 @@ html, body {
     min-width: 40vw;
     text-align: left;
     padding: 0.6rem;
+    padding-left: 0;
 }
+
+.todo {
+    border-bottom: 1px solid hsl(236, 33%, 92%);
+}
+
+.todo-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1.5rem 1rem;
+    margin-left: -20px;
+}
+
+.todo-item::before {
+    background-color: white;
+    border: 1px solid hsl(236, 33%, 92%);
+    border-radius: 50%;
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    padding-left: -20px;
+    height: 25px;
+    width: 25px;
+}
+
+.checked {
+    display: none;
+}
+
 .attribution {
     font-size: 11px; 
     text-align: center;
