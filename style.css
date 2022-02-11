@@ -17,8 +17,8 @@ html, body {
 .header-container {
     margin-top: -3vh;
     margin: 0 auto;
-    position: relative;
 }
+
 #header-background {
     background: url("images/bg-desktop-light.jpg");
     background-size: 100% auto;
@@ -34,7 +34,7 @@ html, body {
     font-size: 2.5em; 
     font-weight: 700;
     letter-spacing: 15px;
-    margin-top: 20vh;
+    margin-top: 10vh;
 }
 
 .moon-icon {
@@ -42,6 +42,10 @@ html, body {
     height: 30px;
 }
 
+.main-content {
+    margin-top: -20vh;
+    position: relative;
+}
 .task-input {
     background-color: hsl(0, 0%, 98%);
     border: none;
@@ -52,10 +56,20 @@ html, body {
     height: 8vh;
     outline: none;
     padding: 1.2rem;
-    margin-top: -40vh;
-    width: auto;
     min-width: 40vw;
-    z-index: 1000;
+}
+
+.task-container {
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    color: hsl(235, 19%, 35%);
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.125em; 
+    margin-top: 3vh;
+    min-width: 40vw;
+    text-align: left;
+    padding: 0.6rem;
 }
 .attribution {
     font-size: 11px; 
