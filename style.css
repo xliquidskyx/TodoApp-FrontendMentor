@@ -71,38 +71,82 @@ html, body {
     font-size: 1.125em; 
     margin-top: 3vh;
     min-width: 40vw;
+    inline-size: 40vw;
+    word-break: break-all;
     text-align: left;
-    padding: 0.6rem;
-    padding-left: 0;
+    padding: 0 0.6rem 0.6rem 0;
+}
+
+.task-element {
+    padding: 0;
 }
 
 .todo {
     border-bottom: 1px solid hsl(236, 33%, 92%);
+    position: relative;
 }
 
 .todo-item {
     display: inline-block;
     list-style-type: none;
-    padding: 1.5rem 1rem;
-    margin-left: -20px;
+    padding: 1.5rem 3rem;
+    margin-left: 2rem;
 }
 
-.todo-item::before {
+.finished .todo-item {
+    opacity: 0.4;
+    text-decoration: line-through;
+}
+
+.checkmark::before {
     background-color: white;
     border: 1px solid hsl(236, 33%, 92%);
     border-radius: 50%;
     content: '';
     cursor: pointer;
     position: absolute;
-    padding-left: -20px;
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
+    top: 1rem;
+    left: 1rem;
 }
 
 .checked {
-    display: none;
+    background: rgb(71,218,255);
+    background: linear-gradient(166deg, rgba(71,218,255,1) 0%, rgba(233,189,255,1) 100%);
+    border-radius: 50%;
+
+    cursor: pointer;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+
 }
 
+.container-footer {
+    column-gap: 2em;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    opacity: 0.8;
+}
+
+.cross-icon {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.test .cross-icon {
+    display: inline-block;
+}
+
+.footer-mode {
+    column-gap: 2em;
+    display: flex;
+}
 .attribution {
     font-size: 11px; 
     text-align: center;
