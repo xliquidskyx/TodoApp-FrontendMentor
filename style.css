@@ -91,6 +91,7 @@ html, body {
     list-style-type: none;
     padding: 1.5rem 3rem;
     margin-left: 2rem;
+    transition: 1s all;
 }
 
 .finished .todo-item {
@@ -115,20 +116,11 @@ html, body {
     background: rgb(71,218,255);
     background: linear-gradient(166deg, rgba(71,218,255,1) 0%, rgba(233,189,255,1) 100%);
     border-radius: 50%;
-
     cursor: pointer;
     position: absolute;
     height: 30px;
     width: 30px;
 
-}
-
-.container-footer {
-    column-gap: 2em;
-    display: flex;
-    font-size: 0.8em;
-    justify-content: space-evenly;
-    opacity: 0.8;
 }
 
 .cross-icon {
@@ -143,9 +135,34 @@ html, body {
     display: inline-block;
 }
 
+.container-footer {
+    column-gap: 2em;
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-evenly;
+    opacity: 0.8;
+    padding: 0.5rem 0;
+}
+
 .footer-mode {
     column-gap: 2em;
     display: flex;
+}
+
+.filter {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: hsl(235, 19%, 35%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: 0.5s all;
+}
+
+.filter:hover {
+    color: hsl(220, 98%, 61%);
+    opacity: 1;
 }
 .attribution {
     font-size: 11px; 
